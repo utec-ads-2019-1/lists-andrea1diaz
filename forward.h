@@ -39,6 +39,7 @@ class ForwardList : public List<T> {
 
         void push_front(T value) {
           Node<T>* node = new Node<T>;
+          
           node->data = value;
           node->next = this->head;
           this->head = node;
