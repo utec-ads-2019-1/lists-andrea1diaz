@@ -51,7 +51,7 @@ class CircularLinkedList : public List<T> {
         void sort() {
             // TODO
         }
-    
+
         void reverse() {
             // TODO
         }
@@ -64,7 +64,7 @@ class CircularLinkedList : public List<T> {
             // TODO
         }
 
-	    BidirectionalIterator<T> end() {
+	       BidirectionalIterator<T> end() {
             // TODO
         }
 
