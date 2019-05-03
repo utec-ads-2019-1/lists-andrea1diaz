@@ -10,6 +10,7 @@ class BidirectionalIterator : public Iterator<T> {
         BidirectionalIterator(Node<T> *node) : Iterator<T>(node) {};
 
         BidirectionalIterator<T> operator=(BidirectionalIterator<T> other) {
+          // Esto da error, deberías retornar el iterador
           return this->current = other.current;
         }
 
@@ -28,6 +29,7 @@ class BidirectionalIterator : public Iterator<T> {
         }
 
         T operator*() {
+          // Si está vacío?
           return this->current->data;
         }
 };

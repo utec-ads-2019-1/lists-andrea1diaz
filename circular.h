@@ -21,12 +21,15 @@ class CircularLinkedList : public List<T> {
         }
 
         T front() {
+          // Falta controlar el caso vacío
           Node<T>* tmp = this->head;
 
           return tmp->data;
         }
 
         T back() {
+          // Falta controlar el caso vacío
+          // se puede hacer prev de head
           Node<T>* tmp = this->head;
 
           while (tmp->next != this->head) {
@@ -108,6 +111,7 @@ class CircularLinkedList : public List<T> {
         }
 
         T operator[](int index) {
+          // Falta controlar el caso vacío
           int i = 0;
           Node<T>* node = this->head;
 
@@ -195,6 +199,7 @@ class CircularLinkedList : public List<T> {
         }
 
         BidirectionalIterator<T> begin() {
+          // Por qué next?
           return BidirectionalIterator<T>(this->head->next);
         }
 
